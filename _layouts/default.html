@@ -63,11 +63,6 @@
     <div class="side-bar">
       <div class="site-header">
         <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
-        <a href="#" id="menu-button" class="site-button">
-          <svg viewBox="0 0 24 24" class="icon">
-            <use xlink:href="#svg-menu"></use>
-          </svg>
-        </a>
       </div>
 
       <div id="toggle-switch-container">
@@ -109,7 +104,7 @@
         </div>
       </div>
 
-      <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav nav-open">
         {% if site.just_the_docs.collections %}
           {% assign collections_size = site.just_the_docs.collections | size %}
           {% for collection_entry in site.just_the_docs.collections %}
@@ -130,7 +125,7 @@
     </div>
     <div class="main" id="top">
       
-      <div id="main-header" class="main-header">
+      <div id="main-header" class="main-header nav-open">
         {% if site.search_enabled != false %}
         <div class="search">
           <div class="search-input-wrap">
@@ -389,8 +384,8 @@
   </script>
   <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-  <script src="https://navbar.test.cloud.bitcoin.com/navbar.js"></script>
-  <script src="https://footer.test.cloud.bitcoin.com/footer.js"></script>
+  <script src="https://navbar.stage.cloud.bitcoin.com/navbar.js"></script>
+  <script src="https://footer.stage.cloud.bitcoin.com/footer.js"></script>
   <script>
     
     if  (theme === "dark") {
