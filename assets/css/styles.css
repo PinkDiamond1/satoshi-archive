@@ -1,4 +1,3 @@
-@import url(https://menu.cdn.bitcoindotcom.net/uni/dist/fonts.css?family=Gilroy&display=swap);
 
 /* width */
 ::-webkit-scrollbar {
@@ -27,7 +26,7 @@ html[data-theme="dark"] {
 
 html, html[data-theme="light"] {
   color: #131720;
-  background-color: #fbfcff;
+  background-color: #F1F7FD;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,7 +69,7 @@ body.dark-theme div.highlighter-rouge {
 }
 
 body.dark-theme .search-input {
-  background-color: rgb(19, 23, 32);
+  background-color: #231f25;
   color: #aaaaaa;
 }
 
@@ -121,8 +120,7 @@ pre {
 }
 
 body {
-  font-family: Gilroy, sans-serif, sans-serif;
-  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -144,8 +142,8 @@ pre {
 
 a {
   background-color: transparent;
-  color: rgb(10, 193, 142);
-  font-weight: 600;
+  color: #2793FF;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -300,12 +298,6 @@ template {
   box-sizing: border-box;
 }
 
-::selection {
-  color: #fff;
-  background: #00c98e;
-  /*#7253ed*/
-}
-
 ol,
 ul,
 dl,
@@ -355,8 +347,8 @@ p {
 
 @media (min-width: 50rem) {
   p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -469,6 +461,7 @@ hr {
     height: 60px;
     background-color: #fff;
     border-bottom: 1px solid #eeebee;
+    border-radius: 24px;
   }
 }
 
@@ -735,10 +728,8 @@ body {
 }
 
 .main-content ul a {
-  color:rgb(19, 23, 32);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18x;
+  line-height: 32px;
 }
 
 body.dark-theme .main-content ul a {
@@ -942,26 +933,26 @@ body.dark-theme .main-content ul a {
 }
 
 .nav-list .nav-list-item {
-  font-size: 20px !important;
+  font-size: 18px !important;
   position: relative;
   margin: 0;
 }
 
 @media (min-width: 31.25rem) {
   .nav-list .nav-list-item {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 
 @media (min-width: 50rem) {
   .nav-list .nav-list-item {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 
 @media (min-width: 50rem) and (min-width: 31.25rem) {
   .nav-list .nav-list-item {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -993,7 +984,7 @@ body.dark-theme .nav-list .nav-list-item .nav-list-link {
   font-weight: 600;
   color: rgb(19, 23, 32);
   text-decoration: none;
-  border-left: 3px solid #0ac18e;
+  border-left: 3px solid #2793FF;
 }
 
 .nav-list .nav-list-item .nav-list-link:hover,
@@ -1177,17 +1168,8 @@ h1,
   h1,
   .text-alpha {
     font-size: 48px;
-    line-height: 52px;
+    line-height: 56px;
     letter-spacing: -0.53px;
-  }
-}
-
-@media (min-width: 50rem) {
-  h1,
-  .text-alpha {
-    font-size: 64px;
-    line-height: 72px;
-    letter-spacing: -0.7px;
   }
 }
 
@@ -1295,7 +1277,7 @@ h6,
 }
 
 .text-mono {
-  font-family: Gilroy, sans-serif, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
 .text-left {
@@ -1354,24 +1336,27 @@ h6,
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding-top: 7px;
-  padding-right: 16px;
-  padding-bottom: 7px;
-  padding-left: 16px;
+  padding: 12px 28px;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
-  color: rgb(19, 23, 32);
+  color: #2D323B;
   text-decoration: none;
   vertical-align: baseline;
   cursor: pointer;
   background:rgb(251, 252, 255);
-  border: 1px solid rgb(200, 205, 216);
-  border-radius: 3px;
+  border-radius: 12px;
   box-shadow: rgb(0 0 0 / 5%) 0px 2px 4px 0px;
   appearance: none;
+}
+
+.btn:hover {
+  box-shadow: 0px 20px 87px rgba(45, 50, 59, 0.02),
+              0px 10px 38px rgba(45, 50, 59, 0.03),
+              0px 4px 14px rgba(45, 50, 59, 0.05),
+              0px 1px 5px rgba(45, 50, 59, 0.08);;
 }
 
 .btn:focus {
@@ -1382,12 +1367,10 @@ h6,
 
 .btn:focus:hover,
 .btn.selected:focus {
-  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
-}
-
-.btn:hover,
-.btn.zeroclipboard-is-hover {
-  color: #49505f;
+  box-shadow: 0px 20px 87px rgba(45, 50, 59, 0.02),
+              0px 10px 38px rgba(45, 50, 59, 0.03),
+              0px 4px 14px rgba(45, 50, 59, 0.05),
+              0px 1px 5px rgba(45, 50, 59, 0.08);
 }
 
 .btn:hover,
@@ -1395,7 +1378,6 @@ h6,
 .btn.zeroclipboard-is-hover,
 .btn.zeroclipboard-is-active {
   text-decoration: none;
-  background-color: #f4f4f4;
 }
 
 .btn:active,
@@ -1429,7 +1411,6 @@ h6,
 .btn-outline.zeroclipboard-is-active {
   color: #49505f;
   text-decoration: none;
-  background-color: transparent;
   box-shadow: inset 0 0 0 3px #e6e1e8;
 }
 
@@ -1446,21 +1427,16 @@ h6,
 
 .btn-primary {
   color: #ffffff;
-  background: url("https://menu.cdn.bitcoindotcom.net/uni/dist/assets/images/btn.png") 100% 100%;
+  background-color: #2793FF;
   box-shadow: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.5);
-  padding-top: 8px;
-  padding-right: 17px;
-  padding-bottom: 8px;
-  padding-left: 17px;
   border: none;
 }
 
 .btn-primary:hover,
 .btn-primary.zeroclipboard-is-hover {
-  color: #ffffff;
-  opacity: 1;
-  background: url("https://menu.cdn.bitcoindotcom.net/uni/dist/assets/images/btn_h.png") 100% 100%;
   transition: all 150ms ease-in-out; 
+  box-shadow: 0px 6px 6px rgba(0, 123, 255, 0.2),
+  0px 8px 10px rgba(0, 125, 255, 0.25);
 }
 
 .btn-primary:active,
@@ -1559,6 +1535,7 @@ h6,
   height: 4rem;
   padding: 0.5rem;
   transition: padding linear 200ms;
+  border-radius: 24px 24px 0 0;
 }
 
 @media (min-width: 50rem) {
@@ -1607,6 +1584,7 @@ h6,
   border-bottom: 0;
   border-left: 0;
   border-radius: 0;
+  border-radius: 24px;
 }
 
 @media (min-width: 50rem) {
@@ -1661,12 +1639,12 @@ h6,
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 24px 24px;
 }
 
 @media (min-width: 50rem) {
   .search-results {
     top: 100%;
-    width: 536px;
     max-height: calc(100vh - 200%) !important;
   }
 }
@@ -1892,18 +1870,21 @@ h6,
 
 @media (min-width: 50rem) {
   .search-active .search-input-wrap {
-    width: 536px;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   }
 }
 
 .search-active .search-input {
   background-color: #fff;
+  border-radius: 24px 24px 0 0;
 }
 
 @media (min-width: 50rem) {
   .search-active .search-input {
     padding-left: 2.3rem;
+    border-radius: 24px 24px 0 0;
   }
 }
 
@@ -8602,3 +8583,10 @@ html {
   }
 }
 
+#bitcoincom-wgt-navbar svg {
+  color: rgb(45, 50, 59);
+}
+
+body.dark-theme #bitcoin-wgt-navbar svg {
+  color: #fff;
+}
